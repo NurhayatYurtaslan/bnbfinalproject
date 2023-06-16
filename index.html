@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Car Rental Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Decentralized Car Rental Platform</h1>
+    </header>
+    <div id="loginPanel">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="carList" style="display: none;">
+        <h2>Available Cars</h2>
+        <div id="cars"></div>
+    </div>
+    <div id="purchaseForm" style="display: none;">
+        <h2>Purchase Car</h2>
+        <img id="selectedCarImage" src="" alt="Selected Car">
+        <p id="selectedCarDetails"></p>
+        <button id="purchaseButton">Purchase</button>
+    </div>
+    <footer>
+        <p>&copy; 2023 Decentralized Car Rental Platform</p>
+    </footer>
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
